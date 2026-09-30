@@ -34,8 +34,12 @@ addButton.addEventListener("click", () => {
     inputBox.value = "";
 
     deleteBtn.addEventListener("click", () => {
-        task.remove();
+        task.style.textDecoration= "line-through";
     });
+
+    deleteBtn.addEventListener("dblclick", ()=>{
+        task.remove();
+    })
 
     editBtn.addEventListener("click", ()=>{
         let editInput= prompt("Enter Here Edited task......!");
