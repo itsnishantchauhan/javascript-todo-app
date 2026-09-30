@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}   
+
+body{
+    background-color: #fe938c;
+}
+
+h1{
+    text-align: center;
+}
+
+.div1{
+    height: 9%;
+    width: 50%;
+    background-color: #5d576b;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-left: 22%;
+    padding: 5px 5px 5px 5px;
+    border-radius: 30px;
+}
+
+#input{
+    width: 90%;
+    border-top-left-radius: 30px ;
+    border-bottom-left-radius: 30px;
+    background-color: #ffffff;
+    padding-left: 10px;
+    font-size: large;
+    font-weight: bold;
+}
+
+#addBtn{
+    width: 10%;
+    border-top-right-radius: 30px ;
+    border-bottom-right-radius: 30px;
+    background-color: #ffffff;
+}
+
+.div2{
+    height: 60%;
+    width: 80%;
+    background-color: #f1dede;
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px 20px 10px ;
+}
+
+.todo{
+    height: 30px;
+    width: 90%;
+    background-color: #6cd4ff;
+    padding: 2px 2px 2px 2px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 12px;
+    margin-top: 5px;
+}
+
+.divChild{
+    margin-right: 10px;
+}
