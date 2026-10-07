@@ -1,74 +1,79 @@
-*{
-    margin: 0;
+* {
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-html,body{
-    height: 100%;
+html,
+body {
     width: 100%;
-}   
-
-body{
-    background-color: #fe938c;
+    height: 100%;
+    background-color: rgb(28, 27, 27);
+    color: white;
 }
 
-h1{
-    text-align: center;
-}
-
-.div1{
-    height: 9%;
-    width: 50%;
-    background-color: #5d576b;
-    display: flex;
-    justify-content: center;
-    margin-top: 5%;
-    margin-left: 22%;
-    padding: 5px 5px 5px 5px;
-    border-radius: 30px;
-}
-
-#input{
-    width: 90%;
-    border-top-left-radius: 30px ;
-    border-bottom-left-radius: 30px;
-    background-color: #ffffff;
-    padding-left: 10px;
-    font-size: large;
-    font-weight: bold;
-}
-
-#addBtn{
-    width: 10%;
-    border-top-right-radius: 30px ;
-    border-bottom-right-radius: 30px;
-    background-color: #ffffff;
-}
-
-.div2{
-    height: 60%;
-    width: 80%;
-    background-color: #f1dede;
-    margin-left: 10%;
-    margin-top: 2%;
-    margin-bottom: 5px;
-    border-radius: 20px;
+.mainContainer{
+    width: 100%;
+    max-width: 50rem;
+    margin: auto;
+    padding: 2rem 1rem;
     display: flex;
     flex-direction: column;
-    padding: 20px 10px 20px 10px ;
+    gap: 2rem;
 }
 
-.todo{
-    height: 30px;
-    width: 90%;
-    background-color: #6cd4ff;
-    padding: 2px 2px 2px 2px;
+header{
+    position: sticky;
+    top: 0px;
+    background-color: rgb(28, 27, 27);
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.inputContainer{
     display: flex;
     justify-content: space-between;
-    border-radius: 12px;
-    margin-top: 5px;
+    gap: 1rem;
+    height: 2.5rem;
 }
 
-.divChild{
-    margin-right: 10px;
+#taskInput{
+    width: 100%;
+    padding: 0 15px;
+    border-radius: 5px;
+}
+
+.inputContainer .addBtn{
+    padding: 0 15px;
+    border-radius: 5px;
+}
+
+.todoContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.todoContainer .todo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(20, 187, 179, 0.739);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.todoContainer .todo button{
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.todoContainer .todo .saveBtn{
+    display:none;
+}
+
+.todoContainer .todo #editInput{
+    display:none;
 }
